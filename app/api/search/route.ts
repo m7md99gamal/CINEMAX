@@ -9,7 +9,7 @@ export async function GET(request: NextRequest) {
     return NextResponse.json({ error: "Query parameter is required" }, { status: 400 })
   }
 
-  const apiKey = "9905a53586e4fbd03243b64e152b9691"
+  const apiKey = ""
 
   if (!apiKey) {
     return NextResponse.json({ error: "TMDb API key is not configured" }, { status: 500 })

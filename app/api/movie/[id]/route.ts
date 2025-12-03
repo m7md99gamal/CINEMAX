@@ -2,7 +2,7 @@ import { type NextRequest, NextResponse } from "next/server"
 
 export async function GET(request: NextRequest, { params }: { params: Promise<{ id: string }> }) {
   const { id } = await params
-  const apiKey = "9905a53586e4fbd03243b64e152b9691"
+  const apiKey = ""
 
   if (!apiKey) {
     return NextResponse.json({ error: "TMDb API key is not configured" }, { status: 500 })
